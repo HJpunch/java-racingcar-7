@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Game {
+    static final String PRINT_RESULT_MESSAGE = "\n실행 결과";
     List<RacingCar> racingCarList;
     int round;
 
@@ -49,7 +50,7 @@ public class Game {
     }
 
     public void start() {
-        System.out.println("\n실행 결과");
+        System.out.println(PRINT_RESULT_MESSAGE);
         for (int i = 0; i < this.round; i++) {
             playOneRound();
             Utils.printResult(this.racingCarList);
